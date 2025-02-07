@@ -1,0 +1,10 @@
+import pygame
+
+pygame.init()
+screen_width = 400
+screen_heigth = 300
+
+screen=pygame.display.set_mode([screen_width, screen_heigth])
+
+screen.fill((100,0,100))
+pygame.display.flip()
