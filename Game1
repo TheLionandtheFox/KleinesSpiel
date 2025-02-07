@@ -1,3 +1,5 @@
+# noch nicht fertig, ich arbeite daran
+
 import pygame
 
 pygame.init()
