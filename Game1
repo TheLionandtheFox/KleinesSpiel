@@ -1,12 +1,26 @@
-# noch nicht fertig, ich arbeite daran
-
+# Import der Pygame-Bibliothek
 import pygame
 
+# Initialisierung von Pygame
 pygame.init()
-screen_width = 400
-screen_heigth = 300
 
-screen=pygame.display.set_mode([screen_width, screen_heigth])
+# Initialisierung des Fensters
+screen_width = 800
+screen_height = 600
+screen = pygame.display.set_mode([screen_width, screen_height])
 
-screen.fill((100,0,100))
-pygame.display.flip()
+# Farbe des Spielfelds setzen
+screen.fill((100, 0, 100))
+
+# Definition der Variable für die Spielschleife
+running = True
+
+# Spielschleife
+while running:
+    for event in pygame.event.get():
+        # Überprüfen, ob das Kreuz geklickt wurde
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Die gesamte Spieloberfläche aktualisieren
+    pygame.display.flip()
